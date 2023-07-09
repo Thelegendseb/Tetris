@@ -1,6 +1,5 @@
 ﻿Public Class Board
 
-    Private 
     Private State(,) As BoardPiece
 
     Sub New()

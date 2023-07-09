@@ -2,7 +2,7 @@
 
     Private x As Integer
     Private y As Integer
-    Private occupiedBy As Tetromino
+    Private occupiedBy As TetrominoType
 
     Sub New(xPos As Integer, yPos As Integer)
         Me.x = xPos
@@ -10,11 +10,11 @@
         Me.occupiedBy = Nothing
     End Sub
 
-    Public Sub SetOccupant(ByRef val As Tetromino)
+    Public Sub SetOccupant(val As TetrominoType)
         Me.occupiedBy = val
     End Sub
 
-    Public Function GetOccupant() As Tetromino
+    Public Function GetOccupant() As TetrominoType
         Return Me.occupiedBy
     End Function
 
